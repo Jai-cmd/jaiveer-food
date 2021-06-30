@@ -1,0 +1,249 @@
+*{
+    /* css  reset */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ body{
+     background-color:rgb(193, 233, 196);
+    color: white; 
+}
+
+:root{
+    --navbar-height:60;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar::before{
+content: "";
+background-color: black;
+width: 100% ;
+height: 100%;
+position: absolute;
+z-index: -1;
+opacity: 0.5;
+
+}
+
+/* logo and Image */
+#logo img{
+    height: 59px;
+    width: 59px;
+    margin: 5px 11px;
+    border: 2px solid red;
+    border-radius: 50px;
+    background-color: black;
+    
+}
+#logo img:hover{
+    background-color: greenyellow;
+    color: firebrick;
+}
+a:hover{
+    background-color:black ;
+    color: chartreuse;
+}
+#navbar ul{
+    display: flex;
+    /* padding: 10px 4px;
+    margin: 10px 4px; */
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font: 1.3rem;
+    
+
+}
+
+#navbar ul li a{
+    padding: 12px 4px;
+    margin: 4px 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    border: 2px solid solid;
+     border-radius: 40px;
+    background-color: white;
+    color: black;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  
+}
+#home::before{
+content: "";
+background:url("../image/123.jpg")no-repeat center center/cover;
+/* background-image: no-repeat center center/cover; */
+width: 100% ;
+height:450px;
+position: absolute;
+z-index: -1;
+opacity: 0.89;
+top: 0px;
+left: 0px;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+/* services container */
+ #services{
+      display:flex;
+      margin: 34px;
+     
+ }
+ #services .box{
+border:2px solid yellowgreen;
+background-color: rgb(209, 193, 250);
+color: rgb(8, 8, 8);
+width: 100%;
+height: 100%;
+border-radius:60px 10px;
+margin:3px 6px; 
+   
+}
+#services .box img{
+      height: 150px;
+      width: 200px;
+      display: block;
+      margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    padding: 5px 30px;
+    margin: 3px 22px ;
+}
+
+/* Clients Section */
+#client-section{
+ position: relative;
+}
+#client-section::before{
+    content: "";
+    background-image: url("../image/14.jpg");
+    background-image: no-repeat center center/cover;
+     position: absolute; 
+    z-index: -1; 
+    opacity: 0.89;
+    width: 100%;
+    height:100%;   
+    top: 0px;
+    left: 0px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+   padding: 30px;
+}
+#clients img{
+   height: 100px;  
+   width: 100px;
+}
+ 
+client-section::before 
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    opacity: 0.89;
+    z-index: -1;
+    background-image: url("../image/12.jpg");
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+#contact-box input{
+    width:100%;
+    pad: 0.5rem;
+    border-radius:6px;
+    font-size: 1.1;
+}
+
+#contact-box textarea{
+    width:100%;
+    pad: 0.5rem;
+    border-radius:4px;
+    font-size: 1.1;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+ /* footer */
+ footer{
+     background: black;
+     color: white;
+     padding: 9px 2px;
+     bottom: 0px;
+ }
+
+
+/* utility Classes */
+.h-primary{
+    font-size: 1.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 4px 10px;
+    border: 2px solid white;
+    background-color: turquoise;
+    margin: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: maroon;
+    color: mediumspringgreen;
+
+}
+.h-secondary{
+     font-size:2.3rem;
+     padding: 12px;
+}
+.center{
+     text-align: center;
+     color:Black;
+    
+}
+.center1{
+    text-align: center;
+    color:white;
+   
+}
